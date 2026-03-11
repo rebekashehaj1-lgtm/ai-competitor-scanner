@@ -41,4 +41,4 @@ with col2:
     if st.button("Rifresko të dhënat"):
         st.warning("Roboti po skanon faqet... Prit pak.")
         # Këtu roboti do bënte punën e tij realisht
-        streamlit run app.py
+       
