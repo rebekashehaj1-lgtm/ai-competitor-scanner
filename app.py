@@ -14,15 +14,15 @@ import time
 # 1. Dizajni i Faqes Web
 st.set_page_config(page_title="Competitor AI Scanner", layout="wide")
 st.title("📊 Competitor AI Scanner")
-st.subheader("Analiza e Vodafone, T-Mobile & Orange")
+st.subheader("Analiza e Vodafone, One & E-Sim")
 
 # 2. Krijojmë disa të dhëna "shembull" (që do vijnë nga scraping)
 # Në një projekt real, këtu do vendosnim kodin e Selenium
 data = {
-    "Kompania": ["Vodafone", "T-Mobile", "Orange"],
-    "Oferta Kryesore": ["Unlimited L", "Magenta Gold", "Go Fly"],
-    "Çmimi (€)": [25, 22, 20],
-    "GB": ["Pa limit", "50 GB", "100 GB"],
+    "Kompania": ["Vodafone", "One", "E-Sim"],
+    "Oferta Kryesore": ["Unlimited 5G", "The one for you", "Everywere you go"],
+    "Çmimi (€)": [25, 10, 10],
+    "GB": ["Pa limit", "20 GB", "5 GB"],
     "Sentiment i Klientit": ["Pozitiv", "Neutral", "Negativ"]
 }
 
@@ -37,7 +37,7 @@ with col1:
 
 with col2:
     st.write("### AI Insights")
-    st.info("AI: T-Mobile ka çmimin më konkurrues për momentin.")
+    st.info("AI: One ka çmimin më konkurrues për momentin.")
     if st.button("Rifresko të dhënat"):
         st.warning("Roboti po skanon faqet... Prit pak.")
         # Këtu roboti do bënte punën e tij realisht
