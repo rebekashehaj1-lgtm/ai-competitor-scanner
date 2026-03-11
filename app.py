@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1gYAu5sZuA5bqoeQOK_DVltDNoN4dMu9t
 """
 
-pip install streamlit selenium webdriver-manager pandas
-
 import streamlit as st
 import pandas as pd
 import time
